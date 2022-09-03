@@ -1,13 +1,15 @@
-package com.intellias.hw8;
+package com.intellias.hw8.shape2d;
+
+import java.util.Objects;
 
 /**
  * class that represents <code>Quad</code>
  * <p>
- *     extends from <code>abstract class Shape</code>
+ *     extends from <code>abstract class Shape2D</code>
  * </p>
  * @author Oleksii Hytsiv
  */
-public class Quad extends Shape {
+public class Quad extends Shape2D {
     private final double sideA;
     private final double sideB;
 
@@ -27,6 +29,25 @@ public class Quad extends Shape {
     @Override
     public String toString() {
         return String.format("Quad(sideA = %.2f, sideB = %.2f)", sideA, sideB);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(this);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Quad)) {
+            return false;
+        }
+
+        Quad quad = (Quad) o;
+
+        return quad.sideA == sideA && quad.sideB == sideB;
     }
 
     @Override

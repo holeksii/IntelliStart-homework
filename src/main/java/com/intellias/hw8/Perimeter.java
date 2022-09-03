@@ -1,7 +1,13 @@
 package com.intellias.hw8;
 
 /**
- * The interface that implements getArea() method
+ * Interface <code>Perimeter</code>
+ * <p>
+ *     <br>
+ *     represents perimeter
+ *     <br>
+ *     contains <code>abstract method getPerimeter()</code>
+ * </p>
  * @author Oleksii Hytsiv
  */
 public interface Perimeter {

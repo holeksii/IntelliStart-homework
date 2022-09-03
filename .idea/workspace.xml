@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b574616-0c06-4c85-8760-fc6315e0be56" name="Changes" comment="Implement Shapes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Area.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Perimeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Quad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Volume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shape2d/Shape2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shape3d/Cube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shape3d/Shape3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shape2d/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Perimeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Perimeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Quad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shape2d/Quad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shape2d/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shape2d/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,15 +28,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,20 +55,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.toDoOptions"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.intellias.Main" />
@@ -94,8 +97,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662190688232</updated>
-      <workItem from="1662190690862" duration="4693000" />
+      <workItem from="1662190690862" duration="4794000" />
+      <workItem from="1662233649831" duration="3884000" />
     </task>
+    <task id="LOCAL-00001" summary="Implement Shapes">
+      <created>1662196445075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662196445075</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

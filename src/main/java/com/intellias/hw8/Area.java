@@ -1,7 +1,13 @@
 package com.intellias.hw8;
 
 /**
- * The interface that implements <code>getArea()</code> method
+ * Interface <code>Area</code>
+ * <p>
+ *     <br>
+ *     represents area
+ *     <br>
+ *     contains <code>abstract method getArea()</code>
+ * </p>
  * @author Oleksii Hytsiv
  */
 public interface Area {
