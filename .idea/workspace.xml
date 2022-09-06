@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b574616-0c06-4c85-8760-fc6315e0be56" name="Changes" comment="Implement Shape2D, Shape3d">
+    <list default="true" id="7b574616-0c06-4c85-8760-fc6315e0be56" name="Changes" comment="renamed interfaces Area, Perimeter">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/AreaPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/PerimeterPrinter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/ShapePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Quad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Quad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints>
+      <file url="file://$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
+    </disable_hints>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,7 +44,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/intellias/Main.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,8 +105,16 @@
       <workItem from="1662320359258" duration="10000" />
       <workItem from="1662320515849" duration="19000" />
       <workItem from="1662321828732" duration="1547000" />
-      <workItem from="1662410974345" duration="986000" />
+      <workItem from="1662410974345" duration="1702000" />
     </task>
+    <task id="LOCAL-00001" summary="renamed interfaces Area, Perimeter">
+      <created>1662444557314</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662444557314</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +133,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implement Shapes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Shapes" />
+    <MESSAGE value="Area, Perimeter interfaces refactor" />
+    <MESSAGE value="renamed interfaces Area, Perimeter" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed interfaces Area, Perimeter" />
   </component>
 </project>

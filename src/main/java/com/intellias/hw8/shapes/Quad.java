@@ -1,12 +1,6 @@
-package com.intellias.hw8;
+package com.intellias.hw8.shapes;
 
-/**
- * class that represents <code>Quad</code>
- * <p>
- *     extends from <code>abstract class Shape</code>
- * </p>
- * @author Oleksii Hytsiv
- */
+
 public class Quad extends Shape {
     private final double sideA;
     private final double sideB;

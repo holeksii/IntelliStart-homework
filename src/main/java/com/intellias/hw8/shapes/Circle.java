@@ -1,12 +1,6 @@
-package com.intellias.hw8;
+package com.intellias.hw8.shapes;
 
-/**
- * class that represents <code>Circle</code>
- * <p>
- *     extends from <code>abstract class Shape</code>
- * </p>
- * @author Oleksii Hytsiv
- */
+
 public class Circle extends Shape {
     private final double radius;
 
