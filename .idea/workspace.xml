@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b574616-0c06-4c85-8760-fc6315e0be56" name="Changes" comment="Remove class Main">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/algorithms/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="7b574616-0c06-4c85-8760-fc6315e0be56" name="Changes" comment="Fix Area, Perimeter printers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/printers/Printer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/HasArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/HasArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/HasPerimeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/HasPerimeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/ShapePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/ShapePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Quad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Quad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/shapes/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/AreaPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/printers/AreaPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/PerimeterPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/printers/PerimeterPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/ShapePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/hw8/printers/ShapePrinter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -58,14 +52,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.toDoOptions"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.intellias.Main" />
@@ -124,8 +119,23 @@
       <workItem from="1662568963947" duration="893000" />
       <workItem from="1662627694552" duration="1525000" />
       <workItem from="1662703926297" duration="677000" />
-      <workItem from="1662715197681" duration="306000" />
+      <workItem from="1662715197681" duration="2358000" />
     </task>
+    <task id="LOCAL-00001" summary="Remove empty lines">
+      <created>1662715540915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662715540916</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix Area, Perimeter printers">
+      <created>1662715618494</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662715618494</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,5 +151,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove empty lines" />
+    <MESSAGE value="Fix Area, Perimeter printers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Area, Perimeter printers" />
   </component>
 </project>
