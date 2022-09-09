@@ -1,6 +1,5 @@
 package com.intellias.hw8.shapes;
 
-
 public class Square extends Shape {
     private final Quad quad;
 
