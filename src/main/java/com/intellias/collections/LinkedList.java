@@ -1,7 +1,6 @@
 package com.intellias.collections;
 
 public class LinkedList<T> implements List<T> {
-    private static final String INDEX_OUT_OF_BOUNDS_MESSAGE = "Index: %d, size: %d";
     private Node<T> head;
     private Node<T> tail;
     private int size;
@@ -76,7 +75,8 @@ public class LinkedList<T> implements List<T> {
 
     public void add(int index, T item) {
         if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException(String.format(INDEX_OUT_OF_BOUNDS_MESSAGE, index, size));
+            throw new IndexOutOfBoundsException(
+                    String.format(ArraysUtil.INDEX_OUT_OF_BOUNDS_MESSAGE, index, size));
         }
 
         if (index == 0) {
@@ -95,19 +95,19 @@ public class LinkedList<T> implements List<T> {
     }
 
     @Override
-    public T remove(int index) {
+    public boolean remove(int index) {
         if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException(String.format(INDEX_OUT_OF_BOUNDS_MESSAGE, index, size));
+            throw new IndexOutOfBoundsException(
+                    String.format(ArraysUtil.INDEX_OUT_OF_BOUNDS_MESSAGE, index, size));
         }
 
         Node<T> current = head;
         for (int i = 0; i < index - 1; i++) {
             current = current.next;
         }
-        T item = current.item;
         current.next = current.next.next;
         size--;
-        return item;
+        return true;
     }
 
     @Override
@@ -162,7 +162,8 @@ public class LinkedList<T> implements List<T> {
     @Override
     public T get(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException(String.format(INDEX_OUT_OF_BOUNDS_MESSAGE, index, size));
+            throw new IndexOutOfBoundsException(
+                    String.format(ArraysUtil.INDEX_OUT_OF_BOUNDS_MESSAGE, index, size));
         }
 
         Node<T> current;
