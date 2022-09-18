@@ -3,8 +3,6 @@ package com.intellias.collections;
 public class ArrayList<T> implements List<T> {
     private static final int DEFAULT_CAPACITY = 10;
     private static final int SIZE_FACTOR = 2;
-    private static final String ILLEGAL_CAPACITY_MESSAGE = "Illegal capacity: %d";
-    private static final String INDEX_OUT_OF_BOUNDS_MESSAGE = "Index: %d, size: %d";
     private Object[] elements;
     private int size;
 
@@ -14,7 +12,8 @@ public class ArrayList<T> implements List<T> {
 
     public ArrayList(int capacity) {
         if (capacity < 0) {
-            throw new IllegalArgumentException(String.format(ILLEGAL_CAPACITY_MESSAGE, capacity));
+            throw new IllegalArgumentException(
+                    String.format(ArraysUtil.ILLEGAL_CAPACITY_MESSAGE, capacity));
         }
         elements = new Object[capacity];
     }
@@ -60,10 +59,12 @@ public class ArrayList<T> implements List<T> {
 
     public void add(int index, T item) {
         if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException(String.format(INDEX_OUT_OF_BOUNDS_MESSAGE, index, size));
+            throw new IndexOutOfBoundsException(
+                    String.format(ArraysUtil.INDEX_OUT_OF_BOUNDS_MESSAGE, index, size));
         }
         if (size == elements.length) {
-            increaseCapacity(elements.length * SIZE_FACTOR);
+            elements = ArraysUtil.increaseCapacity(elements,
+                    elements.length * SIZE_FACTOR);
         }
 
         System.arraycopy(elements, index, elements, index + 1, size - index);
@@ -81,19 +82,20 @@ public class ArrayList<T> implements List<T> {
         return false;
     }
 
-    public T remove(int index) {
+    public boolean remove(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException(String.format(INDEX_OUT_OF_BOUNDS_MESSAGE, index, size));
+            throw new IndexOutOfBoundsException(
+                    String.format(ArraysUtil.INDEX_OUT_OF_BOUNDS_MESSAGE, index, size));
         }
 
-        T oldValue = get(index);
         size--;
         System.arraycopy(elements, index + 1, elements, index, size - index);
 
         if (size < elements.length / SIZE_FACTOR) {
-            decreaseCapacity(Math.max(elements.length / SIZE_FACTOR, DEFAULT_CAPACITY));
+            elements = ArraysUtil.decreaseCapacity(elements,
+                    Math.max(elements.length / SIZE_FACTOR, DEFAULT_CAPACITY));
         }
-        return oldValue;
+        return true;
     }
 
     @Override
@@ -109,30 +111,5 @@ public class ArrayList<T> implements List<T> {
     @SuppressWarnings("unchecked")
     public T get(int index) {
         return (T) elements[index];
-    }
-
-    public void increaseCapacity(int newCapacity) throws IllegalArgumentException {
-        if (newCapacity < 0 || newCapacity < elements.length) {
-            throw new IllegalArgumentException(String.format(ILLEGAL_CAPACITY_MESSAGE, newCapacity));
-        } else if (newCapacity == elements.length) {
-            return;
-        }
-
-        Object[] newElements = new Object[newCapacity];
-        System.arraycopy(elements, 0, newElements, 0, size);
-        elements = newElements;
-    }
-
-    public void decreaseCapacity(int newCapacity) throws IllegalArgumentException {
-        if (newCapacity < 0 || newCapacity > elements.length) {
-            throw new IllegalArgumentException(String.format(ILLEGAL_CAPACITY_MESSAGE, newCapacity));
-        } else if (newCapacity == elements.length) {
-            return;
-        }
-
-        Object[] newElements = new Object[newCapacity];
-        System.arraycopy(elements, 0, newElements, 0, newCapacity);
-
-        elements = newElements;
     }
 }
