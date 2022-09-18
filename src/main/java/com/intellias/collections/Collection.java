@@ -5,6 +5,6 @@ public interface Collection<T> {
     boolean isEmpty();
     boolean contains(Object o);
     boolean add(T item);
-    boolean remove(Object o);
+    boolean remove(int index);
     void clear();
 }
