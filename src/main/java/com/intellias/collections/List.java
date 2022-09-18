@@ -10,5 +10,5 @@ public interface List<T> extends Collection<T> {
     void clear();
     void add(int index, T item);
     T get(int index);
-    T remove(int index);
+    boolean remove(int index);
 }
