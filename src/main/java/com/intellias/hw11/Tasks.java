@@ -1,5 +1,6 @@
 package com.intellias.hw11;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -54,6 +55,24 @@ public class Tasks {
 
     // task 5
     public static <T> Stream<T> zip(Stream<T> first, Stream<T> second) {
-        return first.reduce(Stream.empty(), (acc, el) -> Stream.concat(acc, Stream.of(el, second.findFirst().get())), Stream::concat);
+        List<T> mixed = new ArrayList<>();
+        List<T> firstStreamList = first.toList();
+        List<T> secondStreamList = second.toList();
+
+        int i = 0;
+        int i1 = 0;
+        int i2 = 0;
+        while(i1 < firstStreamList.size() && i2 < secondStreamList.size()) {
+            if (i % 2 != 0) {
+                mixed.add(secondStreamList.get(i2));
+                i2++;
+            } else {
+                mixed.add(firstStreamList.get(i1));
+                i1++;
+            }
+            i++;
+        }
+
+        return mixed.stream();
     }
 }
